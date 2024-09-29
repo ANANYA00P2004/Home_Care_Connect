@@ -1,59 +1,81 @@
+.dashboard-container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
 .title {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-  }
-  
-  .title h1 {
-    font-size: 32px;
-    color: #333;
-  }
-  
-  .profile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .profile-picture {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-right: 20px;
-    border: 2px solid #007bff;
-  }
-  
-  .worker-name {
-    font-size: 24px;
-    color: #333;
-  }
-  
-  .work-assigned {
-    background-color: #f0f4f8;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .work-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .work-table th,
-  .work-table td {
-    padding: 12px;
-    border: 1px solid #ddd;
-    text-align: left;
-  }
-  
-  .work-table th {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  .work-table tr:hover {
-    background-color: #f1f1f1;
-  }
-  
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title h1 {
+  font-size: 32px;
+  color: #333;
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #f0f4f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 2px solid #007bff;
+}
+
+.profile-details h2 {
+  margin: 0;
+}
+
+.profile-details p {
+  margin: 5px 0;
+}
+
+/* Assigned Job Section */
+.assigned-job-section,
+.ratings-section,
+.past-bookings-section {
+  background-color: #f0f4f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.assigned-job-section h3,
+.ratings-section h3,
+.past-bookings-section h3 {
+  margin: 0 0 10px 0;
+}
+
+/* Past Bookings Table */
+.past-bookings-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.past-bookings-table th,
+.past-bookings-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.past-bookings-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.past-bookings-table tr:hover {
+  background-color: #f1f1f1;
+}
