@@ -1,0 +1,59 @@
+.title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .title h1 {
+    font-size: 32px;
+    color: #333;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid #007bff;
+  }
+  
+  .worker-name {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .work-assigned {
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .work-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .work-table th,
+  .work-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .work-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .work-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
