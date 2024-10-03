@@ -41,9 +41,9 @@ const Dashboard = () => {
       {/* Sidebar */}
       <nav className="sidebar">
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Profile</a></li>
+          <li><a href="/user">Profile</a></li>
           <li><a href="#">Help</a></li>
         </ul>
       </nav>
@@ -51,16 +51,20 @@ const Dashboard = () => {
       {/* Main Section */}
       <div className="main-section">
         <h1>Cleaning Services</h1>
-        <div className="card-container">
+        <div className="card-container_user">
           {serviceProviders.map((provider) => (
-            <div className="card" key={provider.id}>
+            <div className="card_user" key={provider.id}>
+              <div className='imgig'>
               <img src={provider.image} alt={provider.name} />
+              </div>
+              <div className='new_details'>
               <h3>{provider.name}</h3>
               <p>Rating: {provider.rating} ⭐</p>
               <p>Email: {provider.email}</p>
               <p>Available: {provider.available}</p>
               <p>Price per hour: {provider.pricePerHour}</p>
               <button onClick={() => openModal(provider)}>Book Now</button>
+              </div>
             </div>
           ))}
         </div>

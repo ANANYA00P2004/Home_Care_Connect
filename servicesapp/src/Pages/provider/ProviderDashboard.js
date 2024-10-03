@@ -20,13 +20,13 @@ const ProviderDashboard = () => {
   };
 
   return (
-    <div className='dashboard-container'>
-      <div className='title'><h1>Provider Dashboard</h1></div>
+    <div className='dashboard-container_p'>
+      <div className='title_p'><h1>Provider Dashboard</h1></div>
       
       {/* Profile Section */}
-      <div className='profile-section'>
-        <img src={workerData.profilePicture} alt="Profile" className='profile-picture' />
-        <div className='profile-details'>
+      <div className='profile-section_p'>
+        <img src={workerData.profilePicture} alt="Profile" className='profile-picture_p' />
+        <div className='profile-details_p'>
           <h2>{workerData.name}</h2>
           <p><strong>Gender:</strong> {workerData.gender}</p>
           <p><strong>Experience:</strong> {workerData.experience}</p>
@@ -34,7 +34,7 @@ const ProviderDashboard = () => {
       </div>
 
       {/* Assigned Job Section */}
-      <div className='assigned-job-section'>
+      <div className='assigned-job-section_p'>
         <h3>Current Job</h3>
         <p><strong>Job:</strong> {workerData.assignedJob.job}</p>
         <p><strong>Time:</strong> {workerData.assignedJob.time}</p>
@@ -42,15 +42,15 @@ const ProviderDashboard = () => {
       </div>
 
       {/* Ratings Section */}
-      <div className='ratings-section'>
+      <div className='ratings-section_p'>
         <h3>Customer Ratings</h3>
         <p><strong>Rating:</strong> {workerData.ratings} ★</p>
       </div>
 
       {/* Past Bookings Section */}
-      <div className='past-bookings-section'>
+      <div className='past-bookings-section_p'>
         <h3>Past Bookings</h3>
-        <table className='past-bookings-table'>
+        <table className='past-bookings-table_p'>
           <thead>
             <tr>
               <th>Job</th>

@@ -55,7 +55,8 @@
     gap: 20px;
     padding: 20px;
     background-color: rgb(195, 195, 245);
-    margin-left: 110px;
+    margin-left: 13%;
+    margin-right: 10%;
     border-radius: 20px;
     height:fit-content;
     margin-top: 5%;
@@ -111,6 +112,12 @@
   
   .card-btn:hover {
     background-color: #0056b3;
+  }
+  .two_buttons{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
   }
   
   /* Responsive design for smaller screens */

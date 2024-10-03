@@ -1,7 +1,7 @@
 import React from 'react'
 import './UserRegister.css';
-import { useNavigate } from "react-router-dom";
-export const UserRegister = () => {
+import { useNavigate } from 'react-router-dom';
+const ProviderRegister = () => {
     const navigate = useNavigate();
   return (
     <div className='register-body'>
@@ -30,7 +30,7 @@ export const UserRegister = () => {
                         <input type="text" placeholder='Enter Your phone number' required></input>
                     </div>
                     <div className='button'>
-                        <input type='submit' value="Register" onClick={() =>navigate('/dashboard')}></input>
+                        <input type='submit' value="Register" onClick={()=>navigate("/provider")}></input>
                     </div>
                 </div>
             </form>
@@ -38,3 +38,5 @@ export const UserRegister = () => {
     </div>
   )
 }
+
+export default ProviderRegister

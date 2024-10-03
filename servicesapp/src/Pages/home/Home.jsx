@@ -2,8 +2,9 @@ import React from 'react';
 import '../home/Home.css';
 import logo from "../../images/logo.jpeg";
 import pic from "../../images/pic.jpeg";
-
+import {useNavigate} from "react-router-dom";
 export const Home = () => {
+  const navigate = useNavigate();
   return (
     <div className="container">
       <div className="navbar">
@@ -17,7 +18,7 @@ export const Home = () => {
             We offer home services to help you out!!
           </p>
           <div className="btn">
-            <a href="/">Get Started</a>
+            <a href="/choose" >Get Started</a>
           </div>
         </div>
         <div className="right_content">

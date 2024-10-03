@@ -1,12 +1,12 @@
 import React from 'react'
-import './UserLogin.css';
-import { useNavigate } from 'react-router-dom';
-export const UserLogin = () => {
-  const navigate = useNavigate();
+import "./UserLogin.css"
+import { useNavigate } from 'react-router-dom'
+const ProviderLogin = () => {
+    const navigate = useNavigate();
   return (
     <div className='container_login'>
         <form>
-            <h1>Customer Login Form</h1>
+            <h1>Provider Login Form</h1>
             <div className='ui divider'></div>
             <div className='ui form'>
             <div className='field'>
@@ -21,9 +21,13 @@ export const UserLogin = () => {
             <label>Password</label>
             <input type='password' name='password' placeholder='Password' required/>
             </div>
-            <button className='fluid ui button blue' onClick={()=>navigate("/dashboard")}>Submit</button>
+            <button className='fluid ui button blue' onClick={() => navigate("/provider")}>
+                 Submit
+                        </button>
             </div>
         </form>
     </div>
-  );
-};
+  )
+}
+
+export default ProviderLogin

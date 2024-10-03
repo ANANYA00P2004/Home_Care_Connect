@@ -6,7 +6,7 @@
 }
 .register-body{
     display: flex;
-    height:100vh;
+    height:100%;
     justify-content: center;
     align-items: center;
     padding: 10px;
@@ -24,7 +24,7 @@
     font-size:25px;
     font-weight: 500;
     position: relative;
-     margin-bottom: 4%; 
+     margin-bottom: 3%; 
 }
 .title_register::before{
     content:'';
@@ -37,7 +37,7 @@
 }
 .container_register form.user-details{
     display: flex ;
-     flex-wrap: wrap;  
+     /* flex-wrap: wrap;   */
     justify-content: space-between;
     margin:20px 0 12px 0;
 }
@@ -47,10 +47,10 @@ form .user-details .input-box{
 }
 .user-details .input-box .details{
     font-weight :500;
-    margin-bottom:5px;
+    margin-bottom:2px;
 }
 .user-details .input-box input{
-    height:45px;
+    height:40px;
     width:90%;
     outline:none;
     border-radius: 5px;

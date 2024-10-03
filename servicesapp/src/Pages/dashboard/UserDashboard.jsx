@@ -2,11 +2,13 @@ import React from 'react'
 import logo from "../../images/logo.jpeg";
 import pic from "../../images/pic.jpeg";
 import { FaUsers } from 'react-icons/fa';
+import {useNavigate} from "react-router-dom";
 
 import './UserDashboard.css';
 import { FaHome, FaUser, FaWallet, FaChartBar, FaTasks, FaCog, FaQuestionCircle, FaSignOutAlt, FaUserCog, FaLaptopCode, FaWordpress, FaPalette, FaAppStoreIos, FaHtml5, FaCss3Alt, FaJsSquare } from 'react-icons/fa';
 
 const UserDashboard = () => {
+    const navigate = useNavigate();
   return (
     <div className="container_dashboard">
       <nav>
@@ -24,7 +26,7 @@ const UserDashboard = () => {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="/user">
               <FaUser />
               <span className="nav-item">Profile</span>
             </a>
@@ -63,7 +65,7 @@ const UserDashboard = () => {
            
             <h3>Cleaning</h3>
             <p>We offer exclusive cleaning facilities using newer electronic gadgets.</p>
-            <button>Search</button>
+            <button onClick={()=>navigate("/cleaning")}>Search</button>
           </div>
           <div className="card">
             {/* <FaWordpress /> */}

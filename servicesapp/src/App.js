@@ -6,7 +6,9 @@ import { UserRegister } from "./Pages/register/UserRegister";
 import UserDashboard from "./Pages/dashboard/UserDashboard";
 import Dashboard from "./Pages/dashboard/Dashboard";
 import ProviderDashboard from "./Pages/provider/ProviderDashboard";
-
+import UserProfile from "./Pages/dashboard/UserProfile";
+import ProviderLogin from "./Pages/login/ProviderLogin";
+import ProviderRegister from "./Pages/register/ProviderRegister";
 function App() {
   return (
     <BrowserRouter>
@@ -18,6 +20,9 @@ function App() {
         <Route path="/dashboard" element={<UserDashboard />} />
         <Route path="/cleaning" element={<Dashboard />} />
         <Route path="/provider" element={<ProviderDashboard />} />
+        <Route path="/user" element={<UserProfile />} />
+        <Route path="/plogin" element={<ProviderLogin/>}/>
+        <Route path="/pregister" element={<ProviderRegister/>}/>
       </Routes>
     </BrowserRouter>
   );
